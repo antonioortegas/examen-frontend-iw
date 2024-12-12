@@ -5,10 +5,10 @@ Repositorio para el examen de backend de Ingeniería Web
 
 1. Asegurarse de que Docker Desktop (y Docker engine) se encuentren instalados y en funcionamiento.
 2. Clonar el proyecto del repositorio GitHub correspondiente, o bien descomprimir el zip de la entrega con el código fuente.
-[Link a GitHub](https://github.com/antonioortegas/iw-backend.git)
+[Link a GitHub](https://github.com/antonioortegas/examen-frontend-iw.git)
 3. Hacer cd al root del proyecto, (normalmente al clonarlo, hacer
     ```bash
-    cd iw-backend/
+    cd examen-frontend-iw/
     ```
     siendo este el nombre de la carpeta del proyecto. En caso de haber descomprimido el zip, podemos seleccionar la carpeta > click derecho > open in terminal
 4. Una vez estamos en la root del proyecto, debemos copiar el contenido de ‘.env.example’ a un archivo al que debemos llamar ‘.env’ si este no existe. En caso de que la terminal usada lo permita, podemos hacer:
