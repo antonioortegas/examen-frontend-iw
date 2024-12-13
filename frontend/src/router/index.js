@@ -17,6 +17,12 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      // Catch all 404 - define at the very end
+      path: '/:catchAll(.*)',
+      name: 'NotFound',
+      component: () => import('../views/NotFound.vue')
+    }
   ],
 })
 
