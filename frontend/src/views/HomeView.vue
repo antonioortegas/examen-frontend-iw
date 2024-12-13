@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import FormWithImage from '@/components/FormWithImage.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <h1 class="text-3xl font-semibold text-gray-800">Home</h1>
+    <FormWithImage />
+  </div>
 </template>
