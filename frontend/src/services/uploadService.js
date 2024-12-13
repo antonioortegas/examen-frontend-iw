@@ -16,7 +16,7 @@ export async function uploadFileToCloudinary(file) {
   formData.append('foto', file);
 
   try {
-    const response = await axios.post('http://localhost:3001/api/cloudinary/subirFoto', formData, {
+    const response = await axios.post('/api/cloudinary/subirFoto', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

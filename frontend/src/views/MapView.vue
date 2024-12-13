@@ -33,7 +33,7 @@ const fetchUserMap = async () => {
         return;
     }
     try {
-        const response = await axios.get(`http://localhost:3001/api/mapa/${email.value}`);
+        const response = await axios.get(`/api/mapa/${email.value}`);
         marcadores.value = response.data.marcadores;
         visits.value = response.data.visitas.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); // Sort visits by timestamp
 
@@ -56,7 +56,7 @@ const fetchVisitMap = async () => {
         return;
     }
     try {
-        const response = await axios.get(`http://localhost:3001/api/mapa/${visit.value}`);
+        const response = await axios.get(`/api/mapa/${visit.value}`);
         marcadores.value = response.data.marcadores;
         visits.value = response.data.visitas.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)); // Sort visits by timestamp
 
@@ -121,7 +121,7 @@ const findLocationAndAddMarker = async () => {
         };
 
         // Save marker to the backend
-        await axios.post('http://localhost:3001/api/mapa/marcador', { email: email.value, ...newMarker });
+        await axios.post('/api/mapa/marcador', { email: email.value, ...newMarker });
         fetchUserMap();
         alert('Marker added successfully!');
     } catch (error) {
